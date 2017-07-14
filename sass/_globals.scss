@@ -309,7 +309,7 @@ header{
 	}
 	.logo-wrap{
 		overflow:hidden;
-		width:52%;
+		width:51%;
 		float:left;
 		height:160px;
 		overflow-x:hidden;
@@ -333,7 +333,7 @@ header{
 	}
 	nav{
 		float:right;
-		width:48%;
+		width:49%;
 		//margin-top:68px;
 		li{
 			position:relative;
@@ -562,7 +562,7 @@ h2,h3{
 .slider{
 	position:relative;
 	width:100%;
-	height:65%;
+	height:90%;
 	min-height:600px;
 	.slides{
 		position:absolute;
@@ -746,7 +746,7 @@ h2,h3{
 			line-height:30px;
 			font-weight:400;
 			padding-top:15px;
-			color:rgba(255,255,255,0.85);
+			color:rgba(255,255,255,0.9);
 			span{
 				display:block;
 				@include transform(translateY(25px));
@@ -781,20 +781,12 @@ h2,h3{
 	}
 }
 
-.page-intro{
-	padding:90px 30px 90px 30px;
-	text-align:center;
-	//border-bottom:1px solid #ebebeb;
-	p{
-		font-size:18px;
-		line-height:28px;
-	}
-}
 
 .quick-app-section{
-	background:#f6f6f6;
+	padding:80px 0;
+	background:white;
 	.container{
-		max-width:960px;
+		//max-width:960px;
 	}
 	.col-1-2{
 		padding:60px 0;
@@ -812,20 +804,15 @@ h2,h3{
 		h3{
 			font-size:30px;
 			line-height:30px;
-			margin-bottom:15px;
+			margin-top:60px;
 			color:$red;
 		}
-		p{
-			font-size:18px;
-			line-height:28px;
-			margin-bottom:40px;
-		}
 		ul{
-			margin-top:50px;
+			margin-top:30px;
 			li{
 				font-size:16px;
 				line-height:18px;
-				padding:15px 0;
+				padding:12px 0;
 				list-style:none;
 				color:#777;
 				span{
@@ -841,6 +828,9 @@ h2,h3{
 				}
 			}
 		}
+		a{
+			margin-top:65px;
+		}
 	}
 	.form-section{
 		
@@ -849,11 +839,10 @@ h2,h3{
 	// FORM / APPLICATION
 	// –––––––––––––––––––––––––––––––––
 	form{
-		padding:60px 30px;
+		padding:60px 90px;
 		text-align:center;
-		background:white;
+		background:#f6f6f6;
 		@include border-radius(5px);
-		box-shadow:0 0 6px 0 rgba(0,0,0,0.2);
 		.form-header{
 			h3{
 				font-size:30px;
@@ -895,11 +884,13 @@ h2,h3{
 					color:#777;
 				}
 				button{
+					display:block;
 					width:100%;
+					max-width:350px;
+					margin:25px auto 0 auto;
 					border:0;
 					font-family:"Lato", sans-serif;
 					line-height:58px;
-					margin-top:0;
 					@include transform(translateZ(1px));
 					span{
 						background:#222;
@@ -922,7 +913,7 @@ h2,h3{
 	        border:1px solid #ddd;
 			@include border-radius(5px);
 	        overflow: hidden;
-	        background: url(../img/chevron-down.png) no-repeat right 15px center;
+	        background: white url(../img/chevron-down.png) no-repeat right 15px center;
 	    }
 	    .select-style select {
 	        padding:0 15px;
@@ -972,36 +963,82 @@ h2,h3{
 
 
 
-.driver-pay{
-	padding:120px 30px;
-	background:white;
+.page-intro{
+	padding:150px 30px;
 	text-align:center;
+	background:$primary;
+	color:white;
 	h3{
-		font-size:30px;
-		line-height:30px;
-		margin-bottom:30px;
-		color:$red;
-	}
-	h4{
-		font-size:18px;
-		line-height:28px;
-		font-weight:900;
+		font-size:28px;
+		line-height:33px;
+	    margin-bottom:40px;
+	    strong{
+	    	color:rgba(255,255,255,0.5);
+	    	font-size:23px;
+	    }
 	}
 	p{
 		font-size:18px;
 		line-height:28px;
-		margin-bottom:50px;
+		color:rgba(255,255,255,0.5);
 	}
-	
+	ul{
+		margin-top:40px;
+		text-align:left;
+		li{
+			list-style:none;
+			font-size:16px;
+			line-height:20px;
+			padding-bottom:15px;
+			&:last-child{
+				padding-bottom:0;
+			}
+		}
+	}
+}
+
+.hidden-header{
+	position:relative;
+	height:150px;
+	cursor:pointer;
+	@include transition(color 0.8s $easeOutExpo);
+	h3{
+		font-size:28px;
+		line-height:150px;
+	}
+	i{
+		font-size:18px;
+		position:absolute;
+		right:0;top:70px;
+		@include transition(transform 0.4s $easeOutExpo);
+		&.active{
+			@include transform(rotate(180deg));
+		}
+	}
+	&:hover, &.active{
+		color:$red;
+	}
+}
+.hidden-fold{
+	overflow:hidden;
+	padding:0 0 80px 0;
+}
+.driver-pay{
+	background:white;
+	border-bottom:1px solid #ddd;
+	p{
+		font-size:18px;
+		line-height:28px;
+		strong{
+			font-weight:700;
+		}
+	}
 	.pay-chart{
-		margin-top:60px;
+		margin-top:40px;
 		p{
 			font-size:14px;
-			margin-top:20px;
-			
-				font-weight:700;
-				
-			
+			margin-top:10px;
+			color:#777;
 		}
 		.col-1-5{
 			font-size:14px;
@@ -1032,6 +1069,47 @@ h2,h3{
 		}
 		
 	}
+}
+.driver-bonuses{
+	background:white;
+	border-bottom:1px solid #ddd;
+	h4{
+		font-size:20px;
+		line-height:20px;
+		margin-bottom:30px;
+		font-weight:700;
+	}
+	h5{
+		font-size:18px;
+		line-height:18px;
+		margin-bottom:15px;
+		font-weight:700;
+		//color:$red;
+	}
+	p{
+		font-size:18px;
+		line-height:28px;
+	}
+	.row{
+		margin-bottom:40px;
+		&:last-child{
+			margin-bottom:0;
+		}
+
+	}
+	ul{
+		text-align:left;
+		li{
+			list-style:none;
+			font-size:16px;
+			line-height:20px;
+			padding-bottom:10px;
+			&:last-child{
+				padding-bottom:0;
+			}
+		}
+	}
+	
 }
 
 

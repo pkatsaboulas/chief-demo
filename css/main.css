@@ -409,7 +409,7 @@ header .container {
 header .header-wrap {
   width: 100%;
   height: 160px;
-  background: #181818;
+  background: #222;
 }
 header .btn_apply_header {
   position: absolute;
@@ -477,7 +477,7 @@ header .phone_header strong {
 }
 header .logo-wrap {
   overflow: hidden;
-  width: 52%;
+  width: 51%;
   float: left;
   height: 160px;
   overflow-x: hidden;
@@ -510,7 +510,7 @@ header .logo img {
 }
 header nav {
   float: right;
-  width: 48%;
+  width: 49%;
 }
 header nav li {
   position: relative;
@@ -622,7 +622,7 @@ header .contact-header li a:hover {
 
 footer {
   padding: 150px 0 0 0;
-  background: #181818;
+  background: #222;
   text-align: center;
 }
 footer .nav-footer {
@@ -717,7 +717,7 @@ h2, h3 {
 .call-us {
   display: block;
   margin-top: 40px;
-  color: #181818;
+  color: #222;
   letter-spacing: 0;
 }
 .call-us strong {
@@ -744,7 +744,7 @@ h2, h3 {
 .slider {
   position: relative;
   width: 100%;
-  height: 65%;
+  height: 90%;
   min-height: 600px;
 }
 .slider .slides {
@@ -977,7 +977,7 @@ h2, h3 {
   line-height: 30px;
   font-weight: 400;
   padding-top: 15px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 .page-hero .hero-copy p span {
   display: block;
@@ -1006,7 +1006,7 @@ h2, h3 {
   position: relative;
   padding: 200px 0;
   text-align: center;
-  background: #181818 url(../img/pay.jpg) no-repeat center;
+  background: #222 url(../img/pay.jpg) no-repeat center;
   background-size: cover;
 }
 .hiring-hero h2 {
@@ -1020,20 +1020,9 @@ h2, h3 {
   padding-bottom: 5px;
 }
 
-.page-intro {
-  padding: 90px 30px 90px 30px;
-  text-align: center;
-}
-.page-intro p {
-  font-size: 18px;
-  line-height: 28px;
-}
-
 .quick-app-section {
-  background: #f6f6f6;
-}
-.quick-app-section .container {
-  max-width: 960px;
+  padding: 80px 0;
+  background: white;
 }
 .quick-app-section .col-1-2 {
   padding: 60px 0;
@@ -1048,21 +1037,16 @@ h2, h3 {
 .quick-app-section .quick-app-section_copy h3 {
   font-size: 30px;
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-top: 60px;
   color: #d42531;
 }
-.quick-app-section .quick-app-section_copy p {
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 40px;
-}
 .quick-app-section .quick-app-section_copy ul {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .quick-app-section .quick-app-section_copy ul li {
   font-size: 16px;
   line-height: 18px;
-  padding: 15px 0;
+  padding: 12px 0;
   list-style: none;
   color: #777;
 }
@@ -1077,14 +1061,16 @@ h2, h3 {
   font-weight: 700;
   color: #222;
 }
+.quick-app-section .quick-app-section_copy a {
+  margin-top: 65px;
+}
 .quick-app-section form {
-  padding: 60px 30px;
+  padding: 60px 90px;
   text-align: center;
-  background: white;
+  background: #f6f6f6;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
 }
 .quick-app-section form .form-header h3 {
   font-size: 30px;
@@ -1124,11 +1110,13 @@ h2, h3 {
   color: #777;
 }
 .quick-app-section form .field-group .field button {
+  display: block;
   width: 100%;
+  max-width: 350px;
+  margin: 25px auto 0 auto;
   border: 0;
   font-family: "Lato", sans-serif;
   line-height: 58px;
-  margin-top: 0;
   -moz-transform: translateZ(1px);
   -o-transform: translateZ(1px);
   -ms-transform: translateZ(1px);
@@ -1155,7 +1143,7 @@ h2, h3 {
   border-radius: 5px;
   background-clip: padding-box;
   overflow: hidden;
-  background: url(../img/chevron-down.png) no-repeat right 15px center;
+  background: white url(../img/chevron-down.png) no-repeat right 15px center;
 }
 .quick-app-section form .select-style select {
   padding: 0 15px;
@@ -1201,34 +1189,99 @@ h2, h3 {
   color: #777;
 }
 
-.driver-pay {
-  padding: 120px 30px;
-  background: white;
+.page-intro {
+  padding: 150px 30px;
   text-align: center;
+  background: #222;
+  color: white;
 }
-.driver-pay h3 {
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 30px;
-  color: #d42531;
+.page-intro h3 {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 40px;
 }
-.driver-pay h4 {
+.page-intro h3 strong {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 23px;
+}
+.page-intro p {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+.page-intro ul {
+  margin-top: 40px;
+  text-align: left;
+}
+.page-intro ul li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+.page-intro ul li:last-child {
+  padding-bottom: 0;
+}
+
+.hidden-header {
+  position: relative;
+  height: 150px;
+  cursor: pointer;
+  -webkit-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hidden-header h3 {
+  font-size: 28px;
+  line-height: 150px;
+}
+.hidden-header i {
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  -webkit-transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hidden-header i.active {
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.hidden-header:hover, .hidden-header.active {
+  color: #d42531;
+}
+
+.hidden-fold {
+  overflow: hidden;
+  padding: 0 0 80px 0;
+}
+
+.driver-pay {
+  background: white;
+  border-bottom: 1px solid #ddd;
 }
 .driver-pay p {
   font-size: 18px;
   line-height: 28px;
-  margin-bottom: 50px;
+}
+.driver-pay p strong {
+  font-weight: 700;
 }
 .driver-pay .pay-chart {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .driver-pay .pay-chart p {
   font-size: 14px;
-  margin-top: 20px;
-  font-weight: 700;
+  margin-top: 10px;
+  color: #777;
 }
 .driver-pay .pay-chart .col-1-5 {
   font-size: 14px;
@@ -1255,6 +1308,45 @@ h2, h3 {
   padding: 30px 15px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.driver-bonuses {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.driver-bonuses h4 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.driver-bonuses h5 {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.driver-bonuses p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.driver-bonuses .row {
+  margin-bottom: 40px;
+}
+.driver-bonuses .row:last-child {
+  margin-bottom: 0;
+}
+.driver-bonuses ul {
+  text-align: left;
+}
+.driver-bonuses ul li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.driver-bonuses ul li:last-child {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

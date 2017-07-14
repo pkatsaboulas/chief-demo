@@ -41,6 +41,20 @@ $(function(){
     });
 
 
+    $('.hidden-fold').hide();
+    $('.hidden-header').on('click', function(){
+
+      var $top = $(this).offset().top - 210;
+
+      $(this).toggleClass('active'); 
+      $(this).parent().find('.hidden-fold').slideToggle(250);
+      $(this).parent().parent().siblings().find('.hidden-fold').slideUp(250);
+      $(this).find('i').toggleClass('active');
+      $(this).parent().parent().siblings().find('i, .hidden-header').removeClass('active');
+
+    });
+
+
     
 });
 
