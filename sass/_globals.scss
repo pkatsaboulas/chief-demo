@@ -1494,6 +1494,11 @@ h2,h3{
 				padding-bottom:0;
 			}
 		}
+		&.bold{
+			li{
+				font-weight:700;
+			}
+		}
 	}
 	
 }

@@ -1734,5 +1734,8 @@ h2, h3 {
 .driver-bonuses ul li:last-child {
   padding-bottom: 0;
 }
+.driver-bonuses ul.bold li {
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=main.css.map */
