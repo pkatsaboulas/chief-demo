@@ -72,11 +72,6 @@ HELPERS
   transform: translateY(-50%);
 }
 
-.flex-center-v {
-  display: flex;
-  align-items: center;
-}
-
 /* ––––––––––––––––––––––––––––––––––––––––––––
 GLOBAL STYLES
 ––––––––––––––––––––––––––––––––––––––––––– */
@@ -91,7 +86,6 @@ html, body {
 
 #main {
   width: 100%;
-  max-width: 1500px;
   padding-top: 150px;
   margin: 0 auto;
   height: 100%;
@@ -410,7 +404,7 @@ header {
   -webkit-backface-visibility: hidden;
 }
 header .container {
-  max-width: 1500px;
+  max-width: 100%;
   height: 160px;
 }
 header .header-wrap {
