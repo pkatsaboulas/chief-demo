@@ -571,7 +571,7 @@ header nav li .sub-menu {
   position: absolute;
   left: -29px;
   top: 0;
-  width: 200px;
+  width: 220px;
 }
 header nav li .sub-menu ul {
   margin-top: 30px;
@@ -689,26 +689,30 @@ h2, h3 {
 }
 
 .page-content {
-  padding: 90px 0 120px 0;
   background: white;
+  padding-bottom: 120px;
 }
-.page-content .page-content_heading {
-  font-size: 30px;
-  line-height: 40px;
-  color: #d42531;
-  margin-bottom: 60px;
+.page-content .page-heading {
+  margin-top: 80px;
 }
 .page-content p {
   margin-top: 40px;
   font-size: 16px;
   line-height: 26px;
-  color: #999;
   letter-spacing: 0;
 }
-.page-content .section-break {
-  margin: 50px 0 40px 0;
-  height: 1px;
-  background: #ddd;
+.page-content ul {
+  margin-top: 40px;
+}
+.page-content ul li {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.page-content ul li:last-child {
+  margin-bottom: 0;
 }
 .page-content .col-1-2, .page-content .col-1-1 {
   padding: 0 4.5%;
@@ -732,10 +736,23 @@ h2, h3 {
   font-weight: 700;
 }
 
+.page-heading {
+  font-size: 25px;
+  line-height: 30px;
+  color: #d42531;
+}
+
 .section-heading {
   font-size: 25px;
   line-height: 30px;
   color: #d42531;
+}
+
+.section-break {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 80px 0;
 }
 
 .red-band {
@@ -963,6 +980,17 @@ h2, h3 {
   filter: alpha(opacity=100);
 }
 
+.company-page-hero {
+  width: 100%;
+  padding: 90px 0 0 0;
+}
+.company-page-hero .hero-copy h2 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #222;
+  margin-left: 4.5%;
+}
+
 .page-hero {
   position: relative;
   width: 100%;
@@ -1001,9 +1029,110 @@ h2, h3 {
 .page-hero .hero-copy a {
   margin-top: 40px;
 }
+.page-hero.hiring-hero {
+  height: 350px;
+  min-height: 350px;
+}
+.page-hero.hiring-hero .hero-copy h2, .page-hero.hiring-hero .hero-copy p {
+  color: #222;
+}
+.page-hero.contact-hero {
+  height: 350px;
+  min-height: 350px;
+  background: #f6f6f6;
+}
+.page-hero.contact-hero .hero-copy h2 {
+  color: #d42531;
+}
+.page-hero.contact-hero .hero-copy p {
+  color: #222;
+}
+.page-hero.apply-hero {
+  height: 350px;
+  min-height: 350px;
+}
+.page-hero.apply-hero .hero-copy h2, .page-hero.apply-hero .hero-copy p {
+  color: #222;
+}
 
 .t-white {
   color: white;
+}
+
+.contact-phone {
+  text-align: center;
+  padding: 80px 0;
+  border-bottom: 1px solid #ddd;
+}
+.contact-phone li {
+  font-size: 25px;
+  display: inline;
+  margin: 0 5px;
+  font-weight: 700;
+}
+.contact-phone li strong {
+  color: #d42531;
+  font-weight: 400;
+}
+.contact-phone li.divider {
+  font-weight: 300;
+  color: #999;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 90px 30px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+.contact-info strong {
+  font-weight: 700;
+}
+.contact-info a {
+  color: #d42531;
+  font-style: italic;
+}
+
+.hiring-map {
+  background: white;
+  padding: 0 30px 90px 30px;
+}
+.hiring-map .container {
+  max-width: 1280px;
+}
+.hiring-map .hiring-map_key {
+  padding: 60px 0;
+  text-align: center;
+}
+.hiring-map .hiring-map_key li {
+  display: inline;
+  margin: 0 30px;
+  font-size: 18px;
+}
+.hiring-map .hiring-map_key li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+.hiring-map .hiring-map_key li.week-2 span {
+  background: #640d0e;
+}
+.hiring-map .hiring-map_key li.week-3 span {
+  background: #d42531;
+}
+.hiring-map .hiring-map_key li.no-hire span {
+  background: #c4c4c4;
+}
+.hiring-map img {
+  width: 100%;
+}
+.hiring-map a {
+  margin-top: 90px;
 }
 
 .hiring-hero {
@@ -1024,51 +1153,79 @@ h2, h3 {
   padding-bottom: 5px;
 }
 
-.quick-app-section {
-  padding: 80px 0;
+.customer-hero {
+  position: relative;
+  padding: 200px 0;
+  margin-top: 90px;
+  text-align: center;
+  background: #222 url(../img/customer-call.jpg) no-repeat center;
+  background-size: cover;
+}
+.customer-hero h2 {
+  font-size: 30px;
+  line-height: 35px;
+  color: #222;
+}
+.customer-hero h2 strong {
+  color: #d42531;
+}
+
+.apply-now-section {
+  background: white;
+  text-align: center;
+  padding: 60px 30px 120px 30px;
+}
+.apply-now-section .or-break {
+  display: inline-block;
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+.quick-app {
+  padding-top: 10px;
   background: white;
 }
-.quick-app-section .col-1-2 {
+.quick-app .col-1-2 {
   padding: 60px 0;
 }
-.quick-app-section .col-1-2:first-child {
+.quick-app .col-1-2:first-child {
   padding-right: 5%;
 }
-.quick-app-section .quick-app-section_copy > div {
+.quick-app .quick-app-section_copy > div {
   margin: 0 auto;
   text-align: center;
 }
-.quick-app-section .quick-app-section_copy h3 {
+.quick-app .quick-app-section_copy h3 {
   font-size: 30px;
   line-height: 30px;
   margin-top: 60px;
   color: #d42531;
 }
-.quick-app-section .quick-app-section_copy ul {
+.quick-app .quick-app-section_copy ul {
   margin-top: 30px;
 }
-.quick-app-section .quick-app-section_copy ul li {
+.quick-app .quick-app-section_copy ul li {
   font-size: 16px;
   line-height: 18px;
   padding: 12px 0;
   list-style: none;
   color: #777;
 }
-.quick-app-section .quick-app-section_copy ul li span {
+.quick-app .quick-app-section_copy ul li span {
   display: none;
   width: 30px;
   height: 1px;
   background: #222;
   margin-right: 10px;
 }
-.quick-app-section .quick-app-section_copy ul li strong {
+.quick-app .quick-app-section_copy ul li strong {
   font-weight: 700;
   color: #222;
 }
-.quick-app-section .quick-app-section_copy a {
+.quick-app .quick-app-section_copy a {
   margin-top: 65px;
 }
-.quick-app-section form {
+.quick-app form {
   padding: 60px 90px;
   text-align: center;
   background: #f6f6f6;
@@ -1076,22 +1233,22 @@ h2, h3 {
   border-radius: 5px;
   background-clip: padding-box;
 }
-.quick-app-section form .form-header h3 {
+.quick-app form .form-header h3 {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 15px;
   color: #d42531;
 }
-.quick-app-section form .form-header p {
+.quick-app form .form-header p {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 30px;
 }
-.quick-app-section form .field-group {
+.quick-app form .field-group {
   text-align: left;
   margin: 10px 0;
 }
-.quick-app-section form .field-group .field input {
+.quick-app form .field-group .field input {
   width: 100%;
   height: 50px;
   padding: 0 15px;
@@ -1103,17 +1260,17 @@ h2, h3 {
   font-size: 14px;
   font-family: "Lato", sans-serif;
 }
-.quick-app-section form .field-group .field input:focus {
+.quick-app form .field-group .field input:focus {
   outline: none;
 }
-.quick-app-section form .field-group .field label {
+.quick-app form .field-group .field label {
   height: 50px;
   font-size: 14px;
   line-height: 50px;
   padding: 10px 15px;
   color: #777;
 }
-.quick-app-section form .field-group .field button {
+.quick-app form .field-group .field button {
   display: block;
   width: 100%;
   max-width: 350px;
@@ -1127,19 +1284,46 @@ h2, h3 {
   -webkit-transform: translateZ(1px);
   transform: translateZ(1px);
 }
-.quick-app-section form .field-group .field button span {
+.quick-app form .field-group .field button span {
   background: #222;
 }
-.quick-app-section form .field-group.checkbox {
+.quick-app form .field-group .field textarea {
+  max-width: 100%;
+  min-width: 100%;
+  height: 200px;
+  padding: 15px 15px;
+  background: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+.quick-app form .field-group .field textarea:focus {
+  outline: none;
+}
+.quick-app form .field-group.checkbox {
   margin-top: 30px;
   font-size: 14px;
   color: #777;
   text-align: center;
 }
-.quick-app-section form .field-group.checkbox input {
+.quick-app form .field-group.checkbox input {
   vertical-align: 1.5px;
 }
-.quick-app-section form .select-style {
+.quick-app form .experience-fields {
+  padding-top: 5px;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+}
+.quick-app form .experience-fields label {
+  display: block;
+  font-size: 14px;
+  padding: 10px 0 10px 15px;
+  color: #777;
+}
+.quick-app form .select-style {
   height: 50px;
   padding: 0;
   border: 1px solid #ddd;
@@ -1149,7 +1333,7 @@ h2, h3 {
   overflow: hidden;
   background: white url(../img/chevron-down.png) no-repeat right 15px center;
 }
-.quick-app-section form .select-style select {
+.quick-app form .select-style select {
   padding: 0 15px;
   width: 100%;
   height: 50px;
@@ -1167,29 +1351,225 @@ h2, h3 {
   -moz-appearance: none;
   appearance: none;
 }
-.quick-app-section form .select-style select:focus {
+.quick-app form .select-style select:focus {
   outline: none;
 }
-.quick-app-section form a {
+.quick-app form a {
   display: inline-block;
   font-size: 14px;
   color: #7d7d7d;
   margin-top: 10px;
   text-decoration: none;
 }
-.quick-app-section form a:hover {
+.quick-app form a:hover {
   text-decoration: underline;
 }
-.quick-app-section form ::-webkit-input-placeholder {
+.quick-app form ::-webkit-input-placeholder {
   color: #777;
 }
-.quick-app-section form ::-moz-placeholder {
+.quick-app form ::-moz-placeholder {
   color: #777;
 }
-.quick-app-section form :-ms-input-placeholder {
+.quick-app form :-ms-input-placeholder {
   color: #777;
 }
-.quick-app-section form :-moz-placeholder {
+.quick-app form :-moz-placeholder {
+  color: #777;
+}
+
+.contact-form {
+  padding: 80px 0;
+  background: white;
+}
+.contact-form .col-1-2 {
+  padding: 60px 0;
+}
+.contact-form .col-1-2:first-child {
+  padding-right: 5%;
+}
+.contact-form .quick-app-section_copy > div {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form .quick-app-section_copy h3 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 60px;
+  color: #d42531;
+}
+.contact-form .quick-app-section_copy ul {
+  margin-top: 30px;
+}
+.contact-form .quick-app-section_copy ul li {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 0;
+  list-style: none;
+  color: #777;
+}
+.contact-form .quick-app-section_copy ul li span {
+  display: none;
+  width: 30px;
+  height: 1px;
+  background: #222;
+  margin-right: 10px;
+}
+.contact-form .quick-app-section_copy ul li strong {
+  font-weight: 700;
+  color: #222;
+}
+.contact-form .quick-app-section_copy a {
+  margin-top: 65px;
+}
+.contact-form form {
+  padding: 60px 90px;
+  text-align: center;
+  background: #f6f6f6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.contact-form form .form-header h3 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #d42531;
+}
+.contact-form form .form-header p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.contact-form form .field-group {
+  text-align: left;
+  margin: 10px 0;
+}
+.contact-form form .field-group .field input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  background: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+.contact-form form .field-group .field input:focus {
+  outline: none;
+}
+.contact-form form .field-group .field label {
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 10px 15px;
+  color: #777;
+}
+.contact-form form .field-group .field button {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 25px auto 0 auto;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 58px;
+  -moz-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  -ms-transform: translateZ(1px);
+  -webkit-transform: translateZ(1px);
+  transform: translateZ(1px);
+}
+.contact-form form .field-group .field button span {
+  background: #222;
+}
+.contact-form form .field-group .field textarea {
+  max-width: 100%;
+  min-width: 100%;
+  height: 200px;
+  padding: 15px 15px;
+  background: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+.contact-form form .field-group .field textarea:focus {
+  outline: none;
+}
+.contact-form form .field-group.checkbox {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+.contact-form form .field-group.checkbox input {
+  vertical-align: 1.5px;
+}
+.contact-form form .experience-fields {
+  padding-top: 5px;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+}
+.contact-form form .experience-fields label {
+  display: block;
+  font-size: 14px;
+  padding: 10px 0 10px 15px;
+  color: #777;
+}
+.contact-form form .select-style {
+  height: 50px;
+  padding: 0;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  overflow: hidden;
+  background: white url(../img/chevron-down.png) no-repeat right 15px center;
+}
+.contact-form form .select-style select {
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+  margin-left: 0px;
+  margin-top: -1px;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #777;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contact-form form .select-style select:focus {
+  outline: none;
+}
+.contact-form form a {
+  display: inline-block;
+  font-size: 14px;
+  color: #7d7d7d;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.contact-form form a:hover {
+  text-decoration: underline;
+}
+.contact-form form ::-webkit-input-placeholder {
+  color: #777;
+}
+.contact-form form ::-moz-placeholder {
+  color: #777;
+}
+.contact-form form :-ms-input-placeholder {
+  color: #777;
+}
+.contact-form form :-moz-placeholder {
   color: #777;
 }
 
@@ -1342,10 +1722,11 @@ h2, h3 {
   text-align: left;
 }
 .driver-bonuses ul li {
-  list-style: none;
+  list-style: disc;
   font-size: 16px;
   line-height: 20px;
   padding-bottom: 10px;
+  margin-left: 20px;
 }
 .driver-bonuses ul li:last-child {
   padding-bottom: 0;

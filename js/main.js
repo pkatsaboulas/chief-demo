@@ -11,10 +11,10 @@ $(function(){
   });
 	
 	$('nav li').on('mouseenter', function(){
-        $(this).find('.sub-menu').fadeIn('fast');
+        $(this).find('.sub-menu').fadeIn(200);
 	});
 	$('nav li').on('mouseleave', function(){
-        $(this).find('.sub-menu').fadeOut('fast');
+        $(this).find('.sub-menu').fadeOut(200);
 	});
 
 
