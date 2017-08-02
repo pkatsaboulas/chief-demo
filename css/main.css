@@ -85,12 +85,13 @@ html, body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  background: #bbb;
+  background: #ccc;
   color: #333;
 }
 
 #main {
   width: 100%;
+  max-width: 1500px;
   padding-top: 150px;
   margin: 0 auto;
   height: 100%;
@@ -409,7 +410,7 @@ header {
   -webkit-backface-visibility: hidden;
 }
 header .container {
-  max-width: 100%;
+  max-width: 1500px;
   height: 160px;
 }
 header .header-wrap {
@@ -688,9 +689,12 @@ h2, h3 {
   -webkit-font-smoothing: antialiased;
 }
 
+.pad-bottom {
+  padding-bottom: 120px;
+}
+
 .page-content {
   background: white;
-  padding-bottom: 120px;
 }
 .page-content .page-heading {
   margin-top: 80px;
@@ -723,6 +727,9 @@ h2, h3 {
 .page-content .inset-img {
   margin-top: 50px;
 }
+.page-content .inset-img img {
+  width: 100%;
+}
 
 .call-us {
   display: block;
@@ -740,12 +747,14 @@ h2, h3 {
   font-size: 25px;
   line-height: 30px;
   color: #d42531;
+  max-width: 400px;
 }
 
 .section-heading {
   font-size: 25px;
   line-height: 30px;
   color: #d42531;
+  max-width: 400px;
 }
 
 .section-break {
@@ -1162,8 +1171,8 @@ h2, h3 {
   background-size: cover;
 }
 .customer-hero h2 {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 40px;
+  line-height: 50px;
   color: #222;
 }
 .customer-hero h2 strong {

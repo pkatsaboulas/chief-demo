@@ -76,12 +76,12 @@ html,body{
 	font-weight:400;
 	//letter-spacing:0.75px;
 	-webkit-font-smoothing: antialiased;
-	background:#bbb;
+	background:#ccc;
 	color:#333;
 }
 #main{
 	width:100%;
-	//max-width:1500px;
+	max-width:1500px;
 	padding-top:150px;
 	margin:0 auto;
 	height:100%;
@@ -251,7 +251,7 @@ header{
 	-webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 	.container{
-		max-width:100%;
+		max-width:1500px;
 		height:160px;
 	}
 	.header-wrap{
@@ -500,11 +500,11 @@ h2,h3{
 
 
 .pad-bottom{
+	padding-bottom:120px;
 	
 }
 .page-content{
 	background:white;
-	padding-bottom:120px;
 	.page-heading{
 		margin-top:80px;
 	}
@@ -535,6 +535,9 @@ h2,h3{
 	}
 	.inset-img{
 		margin-top:50px;
+		img{
+			width:100%;
+		}
 	}
 }
 .call-us{
@@ -552,11 +555,13 @@ h2,h3{
 	font-size:25px;
 	line-height:30px;
 	color:$red;
+	max-width:400px;
 }
 .section-heading{
 	font-size:25px;
 	line-height:30px;
 	color:$red;
+	max-width:400px;
 }
 .section-break{
 	width:100%;
@@ -921,8 +926,8 @@ h2,h3{
 	background:$primary url(../img/customer-call.jpg) no-repeat center;
 	background-size:cover;
 	h2{
-		font-size:30px;
-		line-height:35px;
+		font-size:40px;
+		line-height:50px;
 		color:$primary;
 		strong{
 			color:$red;
