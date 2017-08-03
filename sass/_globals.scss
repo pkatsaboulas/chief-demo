@@ -408,7 +408,18 @@ header{
 					letter-spacing:0;
 					a{
 						color:white !important;
+						padding-bottom:2px;
+						border-bottom:1px solid transparent;
+						@include transition(border-color 0.8s $easeOutExpo);
+						&:hover{
+							border-color:white;
+						}
+						&.active{
+							border-color:white;
+						}
 					}
+
+
 				}
 			}
 		}
@@ -1359,21 +1370,18 @@ h2,h3{
 	padding:150px 30px;
 	text-align:center;
 	background:white;
-	//color:white;
 	h3{
 		font-size:30px;
 		line-height:40px;
 	    margin-bottom:40px;
 	    color:$red;
 	    strong{
-	    	color:$primary;
-	    	
+	    	color:$primary;	
 	    }
 	}
 	p{
 		font-size:18px;
 		line-height:28px;
-		//color:#777;
 	}
 	ul{
 		margin-top:40px;
@@ -1477,7 +1485,6 @@ h2,h3{
 		line-height:18px;
 		margin-bottom:15px;
 		font-weight:700;
-		//color:$red;
 	}
 	p{
 		font-size:18px;
@@ -1488,7 +1495,6 @@ h2,h3{
 		&:last-child{
 			margin-bottom:0;
 		}
-
 	}
 	ul{
 		text-align:left;
@@ -1509,7 +1515,21 @@ h2,h3{
 			}
 		}
 	}
-	
 }
+
+
+
+
+
+
+
+
+// –––––––––––––––––––––––––––––––––
+// MEDIA QUERIES
+// –––––––––––––––––––––––––––––––––
+
+
+
+
 
 
