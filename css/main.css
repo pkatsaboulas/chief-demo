@@ -531,6 +531,9 @@ header nav li a {
   -o-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
+header nav li a.active {
+  color: white;
+}
 header nav li i {
   font-size: 12px !important;
   vertical-align: 2px;
@@ -541,6 +544,9 @@ header nav li i {
   -ms-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+header nav li i.active {
+  color: white;
 }
 header nav li.phone {
   color: #999;
@@ -653,6 +659,9 @@ footer .nav-footer a {
   transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 footer .nav-footer a:hover {
+  color: white;
+}
+footer .nav-footer a.active {
   color: white;
 }
 footer .copyright {

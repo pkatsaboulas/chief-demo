@@ -345,6 +345,9 @@ header{
 				color:$secondary;
 				text-decoration:none;
 				@include transition(color 0.6s $easeOutExpo);
+				&.active{
+					color:white;
+				}
 			}
 			i{
 				font-size:12px !important;
@@ -352,6 +355,9 @@ header{
 				margin-left:4px;
 				color:$secondary;
 				@include transition(color 0.6s $easeOutExpo);
+				&.active{
+					color:white;
+				}
 			}
 			&.phone{
 				color:$secondary;
@@ -464,6 +470,9 @@ footer{
 			text-decoration:none;
 			@include transition(color 0.6s $easeOutExpo);
 			&:hover{
+				color:white;
+			}
+			&.active{
 				color:white;
 			}
 		}
