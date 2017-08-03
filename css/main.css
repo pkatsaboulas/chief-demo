@@ -453,11 +453,24 @@ header .btn_apply_header strong {
   position: relative;
   margin-left: 21px;
   z-index: 4;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
   -moz-transform: skew(0deg, 0deg);
   -o-transform: skew(0deg, 0deg);
   -ms-transform: skew(0deg, 0deg);
   -webkit-transform: skew(0deg, 0deg);
   transform: skew(0deg, 0deg);
+  -webkit-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: border-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+header .btn_apply_header:hover strong {
+  border-color: white;
+}
+header .btn_apply_header.active strong {
+  border-color: white;
 }
 header .phone_header {
   position: absolute;

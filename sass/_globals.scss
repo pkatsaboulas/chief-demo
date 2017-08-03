@@ -287,8 +287,22 @@ header{
 			position:relative;
 			margin-left: 21px;
 			z-index:4;
+			border-bottom:1px solid transparent;
+			padding-bottom:2px;
 			@include transform(skew(0deg, 0deg));
+			@include transition(border-color 0.8s $easeOutExpo);
 		}
+		&:hover{
+			strong{
+				border-color:white;
+			}
+		}
+		&.active{
+			strong{
+				border-color:white;
+			}
+		}
+		
 	}
 	.phone_header{
 		position:absolute;
